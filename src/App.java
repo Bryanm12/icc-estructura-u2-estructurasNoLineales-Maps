@@ -6,23 +6,17 @@ import models.Empleado;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
-        // Ejecuta el ejemplo de uso de HashMap con ejemplos sencillos
         runMapExample();
-
-        // Ejecuta el ejemplo de gestión de empleados usando HashMap
         runEmpleadoExample();
-
-        // Ejecuta los ejercicios de sumatoria y anagramas
         runEjerccios();
     }
 
     private static void runEmpleadoExample() {
         EmpleadoContoller empCtri = new EmpleadoContoller();
-        empCtri.addEmpleados(new Empleado(1, "Pablo", "Developer"));
-        empCtri.addEmpleados(new Empleado(5, "Pablo", "Developer"));
+        empCtri.addEmpleados(new Empleado(1, "Matias", "Developer"));
+        empCtri.addEmpleados(new Empleado(5, "Mateo", "Developer"));
         empCtri.addEmpleados(new Empleado(3, "Miguel", "Analyst"));
-        empCtri.addEmpleados(new Empleado(400, "Matias", "Tester"));
+        empCtri.addEmpleados(new Empleado(400, "Pedro", "Tester"));
 
         empCtri.imprimirEmpleados();
 
