@@ -38,7 +38,7 @@ public class App {
     int[] nums = { 11, 2, 7, -2 };  
     int objetivo = 5;
     int[] resultado = ejercicios.sumatoriaDeDos(nums, objetivo);
-    if (resultado != null) {
+    if (resultado.length == 2) {
     System.out.println(
     "Suma de dos para objetivo " + objetivo + ": [" + resultado[0] + ", " + resultado[1] + "]");
     } else {
@@ -47,7 +47,7 @@ public class App {
 
     objetivo = 10;
     resultado = ejercicios.sumatoriaDeDos(nums, objetivo);
-    if (resultado != null) {
+    if (resultado.length == 2) {
     System.out.println(
     "Suma de dos para objetivo " + objetivo + ": [" + resultado[0] + ", " + resultado[1] + "]");
     }   else {
